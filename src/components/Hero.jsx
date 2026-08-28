@@ -12,23 +12,21 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen overflow-hidden bg-teal-deep text-white">
       <div className="absolute inset-0">
-        <img
-          src="/projects/elevation-g2.jpg"
-          alt=""
-          className="h-full w-full object-cover opacity-35"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-deep via-teal-deep/88 to-teal/40" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(217,119,6,0.22),transparent_42%)]" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover opacity-60"
+        >
+          <source src="/projects/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-deep/45 via-teal-deep/20 to-teal/5" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(217,119,6,0.05),transparent_42%)]" />
       </div>
 
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-5 pb-16 pt-28 lg:px-8 lg:pb-24">
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-5 text-xs uppercase tracking-[0.35em] text-gold"
-        >
-          Bengaluru · Architecture · Interiors
-        </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}

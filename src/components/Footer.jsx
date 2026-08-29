@@ -1,6 +1,6 @@
 const phones = [
-  { label: 'Studio', num: '8310388556', href: 'tel:+918310388556' },
-  { label: 'Rudra', num: '9380851489', href: 'tel:+919380851489' },
+  { num: '8310388556', href: 'tel:+918310388556' },
+  { num: '9380851489', href: 'tel:+919380851489' },
 ]
 
 export default function Footer() {
@@ -39,7 +39,7 @@ export default function Footer() {
             {phones.map((p) => (
               <li key={p.num}>
                 <a href={p.href} className="hover:text-gold">
-                  {p.label}: {p.num}
+                  {p.num}
                 </a>
               </li>
             ))}

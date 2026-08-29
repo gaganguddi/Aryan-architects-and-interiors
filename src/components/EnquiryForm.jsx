@@ -57,14 +57,14 @@ export default function EnquiryForm() {
           <h2 className="mt-3 font-serif text-4xl text-teal sm:text-5xl">Book a consultation</h2>
           <p className="mt-4 text-slate">
             Tell us the brief. We will reply with a planning slot. Prefer WhatsApp? The form opens a
-            pre-filled chat with Rudra’s studio line.
+            pre-filled chat with our studio line.
           </p>
           <div className="mt-8 space-y-3 text-sm text-teal">
             <a className="block hover:text-gold" href="tel:+918310388556">
               +91 83103 88556
             </a>
             <a className="block hover:text-gold" href="tel:+919380851489">
-              +91 93808 51489 · Rudra
+              +91 93808 51489
             </a>
             <a className="block hover:text-gold" href="tel:+919740848757">
               +91 97408 48757

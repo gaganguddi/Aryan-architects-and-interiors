@@ -7,10 +7,12 @@ import Process from './components/Process'
 import EnquiryForm from './components/EnquiryForm'
 import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
+import BrandLoader from './components/BrandLoader'
 
 export default function App() {
   return (
     <>
+      <BrandLoader />
       <Navbar />
       <main>
         <Hero />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const companyName = 'Aryan Architects'
+const companyName = 'Aryan Architects & Interiors'
 
 export default function BrandLoader() {
   const [isVisible, setIsVisible] = useState(true)
@@ -52,7 +52,6 @@ export default function BrandLoader() {
             </span>
           ))}
         </p>
-        <p className="brand-loader__subtitle">&amp; Interiors</p>
       </div>
     </div>
   )

@@ -116,24 +116,17 @@ body {
 .brand-loader__name {
   margin: 1rem 0 0;
   font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
   font-weight: 600;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .brand-loader__letter {
   display: inline-block;
   opacity: 0;
-  animation: brand-loader-letter-in 350ms calc(300ms + var(--letter-index) * 45ms) both
+  animation: brand-loader-letter-in 300ms calc(280ms + var(--letter-index) * 28ms) both
     cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.brand-loader__subtitle {
-  margin: 0.2rem 0 0;
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.68rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
 }
 
 @keyframes brand-loader-identity-in {

@@ -63,12 +63,6 @@ export default function ComparisonSlider({
           <span className="text-xs font-semibold">⟷</span>
         </div>
       </div>
-      <span className="absolute top-4 left-4 rounded-full bg-teal/80 px-3 py-1 text-[11px] uppercase tracking-wider text-white backdrop-blur">
-        {beforeLabel}
-      </span>
-      <span className="absolute top-4 right-4 rounded-full bg-gold/90 px-3 py-1 text-[11px] uppercase tracking-wider text-white">
-        {afterLabel}
-      </span>
     </div>
   )
 }

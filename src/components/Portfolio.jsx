@@ -5,21 +5,17 @@ import ComparisonSlider from './ComparisonSlider'
 import Lightbox from './Lightbox'
 import TiltCard from './TiltCard'
 
-const types = ['All work', '3D Design', 'Site Executed']
-
 export default function Portfolio() {
-  const [type, setType] = useState('All work')
   const [cat, setCat] = useState('all')
   const [active, setActive] = useState(null)
   const [cmp, setCmp] = useState(0)
 
   const filtered = useMemo(() => {
     return projects.filter((p) => {
-      const typeOk = type === 'All work' || p.type === type
       const catOk = cat === 'all' || p.category === cat
-      return typeOk && catOk
+      return catOk
     })
-  }, [type, cat])
+  }, [cat])
 
   return (
     <section id="portfolio" className="bg-mist py-24 texture-grid">
@@ -35,21 +31,6 @@ export default function Portfolio() {
               any plate in a full lightbox.
             </p>
           </div>
-        </div>
-
-        <div className="mb-6 inline-flex rounded-full border border-teal/15 bg-white p-1 shadow-sm">
-          {types.map((t) => (
-            <button
-              key={t}
-              type="button"
-              onClick={() => setType(t)}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                type === t ? 'bg-teal text-white' : 'text-slate hover:text-teal'
-              }`}
-            >
-              {t === '3D Design' ? '3D Render Concepts' : t === 'Site Executed' ? 'Real Site Executions' : t}
-            </button>
-          ))}
         </div>
 
         <div className="mb-10 flex flex-wrap gap-2">

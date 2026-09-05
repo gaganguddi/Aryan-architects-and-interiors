@@ -1,5 +1,5 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Building2, ClipboardList, KeyRound, PenTool, ShieldCheck } from 'lucide-react'
 
 const steps = [
@@ -35,7 +35,7 @@ const steps = [
   },
 ]
 
-function FloatingProcessCard({ step, index }) {
+function FloatingProcessCard({ step, index, active }) {
   const cardRef = useRef(null)
   const prefersReducedMotion = useReducedMotion()
   const { scrollYProgress } = useScroll({
@@ -46,24 +46,55 @@ function FloatingProcessCard({ step, index }) {
   const floatingY = useTransform(scrollYProgress, [0, 0.5, 1], [floatDistance, 0, -floatDistance])
 
   return (
-    <motion.article
-      ref={cardRef}
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.08 }}
-      style={prefersReducedMotion ? undefined : { y: floatingY }}
-      className="relative h-full overflow-hidden rounded-3xl border border-teal/10 bg-mist p-8 shadow-[0_18px_48px_-34px_rgba(15,62,70,0.35)] transition duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_24px_54px_-32px_rgba(15,62,70,0.45)]"
-    >
-      <p className="font-serif text-5xl text-teal/15">{step.n}</p>
-      <step.icon className="mt-2 h-6 w-6 text-gold" />
-      <h3 className="mt-3 font-serif text-2xl text-teal">{step.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-slate">{step.copy}</p>
-    </motion.article>
+    <div className={`process-timeline-item ${active ? 'process-timeline-item--active' : ''}`}>
+      <span className="process-timeline-marker" aria-hidden="true">
+        <span>{active ? step.n : ''}</span>
+      </span>
+      <motion.article
+        ref={cardRef}
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.08 }}
+        style={prefersReducedMotion ? undefined : { y: floatingY }}
+        className="process-card relative h-full overflow-hidden rounded-3xl border border-teal/10 bg-mist p-8 shadow-[0_18px_48px_-34px_rgba(15,62,70,0.35)] transition duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_24px_54px_-32px_rgba(15,62,70,0.45)]"
+      >
+        <p className="process-card-number font-serif text-5xl text-teal/15">{step.n}</p>
+        <step.icon className="mt-2 h-6 w-6 text-gold" />
+        <h3 className="mt-3 font-serif text-2xl text-teal">{step.title}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-slate">{step.copy}</p>
+      </motion.article>
+    </div>
   )
 }
 
 export default function Process() {
+  const [activeSteps, setActiveSteps] = useState(new Set())
+
+  useEffect(() => {
+    const items = document.querySelectorAll('.process-timeline-item')
+    if (!items.length) return undefined
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const reached = entries
+          .filter((entry) => entry.isIntersecting)
+          .map((entry) => Number(entry.target.dataset.step))
+        if (reached.length) {
+          setActiveSteps((current) => new Set([...current, ...reached]))
+        }
+      },
+      { rootMargin: '-42% 0px -42% 0px' },
+    )
+
+    items.forEach((item, index) => {
+      item.dataset.step = index
+      observer.observe(item)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section id="process" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -73,7 +104,12 @@ export default function Process() {
         </h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, index) => (
-            <FloatingProcessCard key={step.n} step={step} index={index} />
+            <FloatingProcessCard
+              key={step.n}
+              step={step}
+              index={index}
+              active={activeSteps.has(index)}
+            />
           ))}
         </div>
 

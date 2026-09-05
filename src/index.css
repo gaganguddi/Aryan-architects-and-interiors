@@ -54,6 +54,144 @@ body::-webkit-scrollbar {
     0 18px 50px -24px rgba(15, 62, 70, 0.55);
 }
 
+.process-timeline-item {
+  display: contents;
+}
+
+.process-timeline-marker {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #process {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  #process > div > .mt-12 {
+    margin-top: 2.25rem;
+  }
+
+  .process-timeline-item {
+    position: relative;
+    display: block;
+    padding-left: 2.25rem;
+  }
+
+  .process-timeline-item:not(:last-child)::before {
+    position: absolute;
+    top: 1.125rem;
+    bottom: -2.875rem;
+    left: 1.09375rem;
+    width: 1px;
+    background: #16383e;
+    content: '';
+  }
+
+  .process-timeline-item::after {
+    position: absolute;
+    top: 1.125rem;
+    left: 2.25rem;
+    width: 0.75rem;
+    height: 1px;
+    background: #16383e;
+    content: '';
+  }
+
+  .process-timeline-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    width: 2.25rem;
+    height: 2.25rem;
+    place-items: center;
+    border: 1px solid #16383e;
+    border-radius: 999px;
+    background: white;
+    color: #16383e;
+    font-family: var(--font-sans);
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .process-timeline-marker span {
+    opacity: 0;
+    transform: scale(0.55);
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+
+  .process-timeline-item--active .process-timeline-marker {
+    background: #16383e;
+    color: white;
+  }
+
+  .process-timeline-item--active .process-timeline-marker span {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .process-card {
+    min-height: 0;
+    margin-left: 0.75rem;
+    border-radius: 0.875rem;
+    padding: 1rem 1rem 1.0625rem;
+  }
+
+  .process-card > svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .process-card h3 {
+    margin-top: 0;
+    font-size: 1.1875rem;
+    line-height: 1.2;
+  }
+
+  .process-card > p:last-child {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+  }
+
+  .process-card-number {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #process > div > .mt-12 {
+    margin-top: 2rem;
+  }
+
+  .process-timeline-item {
+    padding-left: 2.25rem;
+  }
+
+  .process-card {
+    border-radius: 0.8125rem;
+    padding: 0.9375rem 0.875rem 1rem;
+  }
+
+  .process-card > svg {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  .process-card h3 {
+    font-size: 1.125rem;
+  }
+
+  .process-card > p:last-child {
+    font-size: 0.8125rem;
+  }
+}
+
 .brand-loader {
   position: fixed;
   inset: 0;

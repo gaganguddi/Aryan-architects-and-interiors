@@ -3,7 +3,7 @@ import { MessageCircle, X, ZoomIn, ZoomOut } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const WA =
-  'https://wa.me/918310388556?text='
+  'https://wa.me/919380851489?text='
 
 export default function Lightbox({ project, onClose }) {
   const [zoom, setZoom] = useState(1)

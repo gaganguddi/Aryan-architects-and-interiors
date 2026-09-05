@@ -15,14 +15,25 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   font-family: var(--font-sans);
   color: var(--color-ink);
   background: var(--color-mist);
   -webkit-font-smoothing: antialiased;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 ::selection {
@@ -47,144 +58,155 @@ body {
   position: fixed;
   inset: 0;
   z-index: 100;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  pointer-events: all;
+  width: 100%;
+  height: 100vh;
+  background: #16383e;
+  opacity: 1;
+  animation: brand-loader-exit 900ms ease 3800ms forwards;
 }
 
-.brand-loader__curtain {
-  position: absolute;
-  inset-inline: 0;
-  height: 50%;
-  background: var(--color-teal-deep);
-  transition: transform 800ms cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-.brand-loader__curtain--top {
-  top: 0;
-  transform-origin: center top;
-}
-
-.brand-loader__curtain--bottom {
-  bottom: 0;
-  transform-origin: center bottom;
-}
-
-.brand-loader--exiting .brand-loader__curtain--top {
-  transform: scaleY(0);
-}
-
-.brand-loader--exiting .brand-loader__curtain--bottom {
-  transform: scaleY(0);
-}
-
-.brand-loader__identity {
+.brand-loader__content {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  animation: brand-loader-identity-in 800ms 150ms both cubic-bezier(0.22, 1, 0.36, 1);
-  transition: opacity 400ms ease, transform 550ms cubic-bezier(0.76, 0, 0.24, 1);
+  justify-content: center;
+  transform: translateY(0);
+  animation: brand-loader-content-exit 900ms cubic-bezier(0.22, 1, 0.36, 1) 3150ms forwards;
 }
 
-.brand-loader--fading .brand-loader__identity {
+.brand-loader__logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 270px;
   opacity: 0;
-  transform: scale(0.94);
-  animation: brand-loader-identity-out 400ms both ease-in;
+  animation: brand-loader-logo-entrance 1200ms cubic-bezier(0.22, 1, 0.36, 1) 150ms forwards;
+}
+
+.brand-loader__ring,
+.brand-loader__circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.brand-loader__ring {
+  width: 290px;
+  height: 290px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  opacity: 0;
+  transform: scale(0.75);
+  animation: brand-loader-ring-reveal 1200ms ease 200ms forwards,
+    brand-loader-ring-exit 700ms ease 3150ms forwards;
+}
+
+.brand-loader__circle {
+  width: 270px;
+  height: 270px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: scale(0);
+  animation: brand-loader-circle-reveal 1000ms cubic-bezier(0.22, 1, 0.36, 1) 250ms forwards,
+    brand-loader-circle-pulse 1500ms ease 1250ms forwards,
+    brand-loader-circle-exit 800ms ease 3150ms forwards;
 }
 
 .brand-loader__logo {
-  width: clamp(5.5rem, 15vw, 8rem);
-  aspect-ratio: 1;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 999px;
-  object-fit: cover;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.24);
-  animation: brand-loader-logo-in 500ms 80ms both cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  z-index: 2;
+  width: 245px;
+  height: 245px;
+  object-fit: contain;
+  opacity: 0;
+  transform: scale(0.65);
+  animation: brand-loader-logo-reveal 1150ms cubic-bezier(0.22, 1, 0.36, 1) 400ms forwards,
+    brand-loader-logo-exit 850ms cubic-bezier(0.22, 1, 0.36, 1) 3150ms forwards;
 }
 
 .brand-loader__rule {
-  width: 2.5rem;
+  width: 0;
   height: 1px;
-  margin-top: 1.5rem;
-  background: var(--color-gold);
+  margin-top: 14px;
+  background: rgba(255, 255, 255, 0.65);
+  animation: brand-loader-rule-reveal 800ms ease 1450ms forwards,
+    brand-loader-rule-exit 600ms ease 3150ms forwards;
 }
 
 .brand-loader__name {
-  margin: 1rem 0 0;
-  font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 4vw, 2.75rem);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  --loader-name-spacing: 6px;
+  margin-top: 32px;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 6px;
   text-align: center;
-}
-
-.brand-loader__letter {
-  display: inline-block;
+  white-space: nowrap;
   opacity: 0;
-  animation: brand-loader-letter-in 300ms calc(280ms + var(--letter-index) * 28ms) both
-    cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(20px);
+  animation: brand-loader-name-reveal 900ms cubic-bezier(0.22, 1, 0.36, 1) 950ms forwards,
+    brand-loader-name-exit 800ms cubic-bezier(0.22, 1, 0.36, 1) 3150ms forwards;
 }
 
-@keyframes brand-loader-identity-in {
-  from {
-    opacity: 0;
-    transform: translateY(14px) scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes brand-loader-identity-out {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.94);
-  }
-}
-
-@keyframes brand-loader-logo-in {
-  from {
-    opacity: 0;
-    transform: scale(0.72) rotate(-8deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-}
-
-@keyframes brand-loader-letter-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px) rotateX(70deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-  }
-}
+@keyframes brand-loader-logo-entrance { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+@keyframes brand-loader-ring-reveal { from { opacity: 0; transform: scale(0.75); } to { opacity: 1; transform: scale(1); } }
+@keyframes brand-loader-circle-reveal { 0% { opacity: 0; transform: scale(0); } 60% { opacity: 1; } 100% { opacity: 1; transform: scale(1); } }
+@keyframes brand-loader-circle-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.025); } 100% { transform: scale(1); } }
+@keyframes brand-loader-logo-reveal { 0% { opacity: 0; transform: scale(0.65); filter: blur(8px); } 55% { opacity: 1; filter: blur(0); } 100% { opacity: 1; transform: scale(1); filter: blur(0); } }
+@keyframes brand-loader-name-reveal { 0% { opacity: 0; transform: translateY(20px); letter-spacing: 3px; } 100% { opacity: 1; transform: translateY(0); letter-spacing: var(--loader-name-spacing); } }
+@keyframes brand-loader-rule-reveal { from { width: 0; opacity: 0; } to { width: 150px; opacity: 1; } }
+@keyframes brand-loader-logo-exit { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(1.08); } }
+@keyframes brand-loader-content-exit { from { transform: translateY(0); } to { transform: translateY(-20px); } }
+@keyframes brand-loader-name-exit { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-15px); } }
+@keyframes brand-loader-rule-exit { from { width: 150px; opacity: 1; } to { width: 0; opacity: 0; } }
+@keyframes brand-loader-ring-exit { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(1.1); } }
+@keyframes brand-loader-circle-exit { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(1.08); } }
+@keyframes brand-loader-exit { from { opacity: 1; visibility: visible; } to { opacity: 0; visibility: hidden; pointer-events: none; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .brand-loader__curtain {
-    transition-duration: 350ms;
-  }
-
-  .brand-loader__identity {
-    animation: none;
-  }
-
+  .brand-loader,
+  .brand-loader__content,
+  .brand-loader__logo-wrapper,
+  .brand-loader__ring,
+  .brand-loader__circle,
   .brand-loader__logo,
-  .brand-loader__letter {
+  .brand-loader__name,
+  .brand-loader__rule {
     animation: none;
     opacity: 1;
   }
+
+  .brand-loader__ring,
+  .brand-loader__circle,
+  .brand-loader__logo-wrapper,
+  .brand-loader__logo {
+    transform: none;
+  }
+
+  .brand-loader__rule {
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-loader__logo-wrapper { width: 215px; height: 215px; }
+  .brand-loader__circle { width: 215px; height: 215px; }
+  .brand-loader__logo { width: 195px; height: 195px; }
+  .brand-loader__ring { width: 235px; height: 235px; }
+  .brand-loader__name {
+    --loader-name-spacing: 1.5px;
+    max-width: calc(100vw - 24px);
+    margin-top: 28px;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    white-space: normal;
+  }
+  .brand-loader__rule { margin-top: 12px; }
 }

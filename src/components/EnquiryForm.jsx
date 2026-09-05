@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Send, Copy, Check } from 'lucide-react'
 
-const WA_BASE = 'https://wa.me/918310388556?text='
+const WA_BASE = 'https://wa.me/919380851489?text='
 
 const empty = {
   name: '',
@@ -60,9 +60,6 @@ export default function EnquiryForm() {
             pre-filled chat with our studio line.
           </p>
           <div className="mt-8 space-y-3 text-sm text-teal">
-            <a className="block hover:text-gold" href="tel:+918310388556">
-              +91 83103 88556
-            </a>
             <a className="block hover:text-gold" href="tel:+919380851489">
               +91 93808 51489
             </a>
@@ -118,11 +115,12 @@ export default function EnquiryForm() {
           <label className="mt-4 block text-xs font-medium tracking-wide text-teal uppercase">
             Budget range
             <select name="budget" value={form.budget} onChange={onChange} className={field}>
-              <option>Under ₹10L</option>
+              <option>Under ₹5L</option>
+              <option>₹5–10L</option>
               <option>₹10–15L</option>
               <option>₹15–25L</option>
-              <option>₹25–40L</option>
-              <option>₹40L+</option>
+              <option>₹25–35L</option>
+              <option>I prefer not to say</option>
             </select>
           </label>
           <label className="mt-4 block text-xs font-medium tracking-wide text-teal uppercase">

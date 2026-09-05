@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react'
 
 const href =
-  "https://wa.me/918310388556?text=Hi%20Aryan%20Architects,%20I'm%20interested%20in%20your%20design%20services."
+  "https://wa.me/919380851489?text=Hi%20Aryan%20Architects,%20I'm%20interested%20in%20your%20design%20services."
 
 export default function WhatsAppFloat() {
   return (

@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Box, Building2, Hammer } from 'lucide-react'
+import { ArrowRight, BadgeCheck, BriefcaseBusiness, Clock3, FolderKanban } from 'lucide-react'
 import TiltCard from './TiltCard'
 
 const stats = [
-  { icon: Box, label: '100% Custom 3D & 2D Floor Plans' },
-  { icon: Building2, label: 'G+1, G+2, G+3 Elevation Specialists' },
-  { icon: Hammer, label: 'Turnkey Execution & Fitouts' },
+  { icon: FolderKanban, label: '800+ Projects Complete' },
+  { icon: BriefcaseBusiness, label: '12+ Years Experience' },
+  { icon: Clock3, label: 'On-Time Delivery' },
+  { icon: BadgeCheck, label: 'Quality Work' },
 ]
 
 export default function Hero() {
@@ -41,8 +42,9 @@ export default function Hero() {
           transition={{ delay: 0.16 }}
           className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg"
         >
-          Custom architectural 2D/3D elevations, luxury residential and commercial interiors,
-          and turnkey fitouts — planned, rendered, and executed by Aryan Architects & Interiors.
+          Bespoke 3D architectural visualizations, luxury residential and commercial interiors,
+          and turnkey fit-outs — from concept to completion, thoughtfully designed, precisely
+          executed, and quality-checked by Aryan Architects & Interiors.
         </motion.p>
 
         <motion.div
@@ -65,7 +67,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-3">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {stats.map((s, i) => (
             <motion.div
               key={s.label}

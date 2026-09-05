@@ -1,32 +1,46 @@
 import { motion } from 'framer-motion'
-import { Box, ChefHat, BedDouble, Sofa, Sparkles } from 'lucide-react'
+import { Building2, Palette } from 'lucide-react'
 import ServiceCard from './ServiceCard'
 
 const services = [
   {
-    icon: Box,
-    title: 'Architectural 2D/3D Planning',
-    copy: 'Precise G+1 to G+3 floor layouts, structural coordination, and photoreal elevation models for residences and commercial volumes.',
+    icon: Building2,
+    title: 'Architecture',
+    copy: 'Thoughtful architectural planning that brings together functionality, structure, aesthetics, and precise documentation.',
+    points: [
+      'Floor plans and space planning',
+      '3D renders and front elevations',
+      'Structural design and detailing',
+      'MEP drawings and coordination',
+      'Furniture layouts',
+      '3D modeling and visualization',
+    ],
   },
   {
-    icon: ChefHat,
-    title: 'Modular Kitchens',
-    copy: 'Minimalist ergonomic layouts, premium acrylic finishes, and storage that actually survives a Bengaluru family kitchen.',
+    icon: Palette,
+    title: 'Interior Design',
+    copy: 'Complete interior solutions designed around your lifestyle, combining practical planning with refined materials and details.',
+    points: [
+      'Modular kitchens and wardrobes',
+      'Renovation and remodeling',
+      'Landscaping and outdoor spaces',
+      'False ceilings and lighting design',
+      'Custom furniture and storage',
+      'Material, color and finish selection',
+    ],
   },
   {
-    icon: BedDouble,
-    title: 'Master Bedroom & Wardrobes',
-    copy: 'Luxury panelling, ambient LED feature walls, and sleek sliding or hinged closets with lifetime-grade hardware.',
-  },
-  {
-    icon: Sofa,
-    title: 'Living, TV Units & Ceilings',
-    copy: 'Contemporary partitions, CNC jali patterns, multi-layer false ceilings, and TV walls that become the room’s architecture.',
-  },
-  {
-    icon: Sparkles,
-    title: 'Specialty Spaces',
-    copy: 'Acoustic home theatres, Japanese/Zen balcony gardens, luxury bathroom suites, and puja or foyer units designed as rituals.',
+    icon: Building2,
+    title: 'Construction',
+    copy: 'End-to-end construction management focused on quality workmanship, reliable coordination, transparent costs, and timely completion.',
+    points: [
+      'House construction with approvals',
+      'Turnkey construction projects',
+      'Site supervision and quality checks',
+      'On-time project delivery',
+      'Material and vendor coordination',
+      'Transparent budget and cost planning',
+    ],
   },
 ]
 
@@ -46,7 +60,7 @@ export default function Services() {
           </h2>
           <p className="mt-4 text-slate">
             From the first 2D plan to the last hardware click — we design, visualise, and execute
-            spaces that feel inevitable.
+            spaces that feel considered, functional, and built to last.
           </p>
         </motion.div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

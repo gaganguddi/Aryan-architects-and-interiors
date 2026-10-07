@@ -8,6 +8,7 @@ import EnquiryForm from './components/EnquiryForm'
 import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
 import BrandLoader from './components/BrandLoader'
+import Chatbot from './components/Chatbot'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <Chatbot />
     </>
   )
 }

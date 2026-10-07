@@ -1,510 +1,3006 @@
 export const categories = [
-  { id: 'all', label: 'All' },
-  { id: 'living', label: 'Living & Foyer' },
-  { id: 'kitchen', label: 'Modular Kitchens' },
-  { id: 'bedroom', label: 'Bedrooms & Closets' },
-  { id: 'design', label: '3D Design' },
-  { id: 'theatre', label: 'Home Theatre & Balcony' },
-]
+  {
+    "id": "all",
+    "label": "All"
+  },
+  {
+    "id": "living",
+    "label": "Living & Foyer"
+  },
+  {
+    "id": "kitchen",
+    "label": "Modular Kitchens"
+  },
+  {
+    "id": "bedroom",
+    "label": "Bedrooms & Closets"
+  },
+  {
+    "id": "design",
+    "label": "3D Design"
+  },
+  {
+    "id": "theatre",
+    "label": "Home Theatre & Balcony"
+  }
+];
 
 export const projects = [
   {
-    id: 'p1',
-    title: 'Layered LED Living Lounge',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-3d-ceiling.jpg',
-    description:
-      'Contemporary living room with a geometric LED false ceiling, teal feature wall, honeycomb shelves, and a sculpted TV unit.',
-    specs: ['Multi-layer ceiling', 'Amber cove lighting', 'Teal feature wall'],
+    "id": "p200",
+    "title": "Living & Ceiling Execution 1",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-1.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p2',
-    title: 'Carved Door Foyer Execution',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-executed-foyer.jpg',
-    description:
-      'On-site foyer with a carved timber entrance, marble flooring, glass staircase, and a marble-backed TV wall.',
-    specs: ['Turnkey fitout', 'Marble flooring', 'Feature TV wall'],
+    "id": "p201",
+    "title": "Living & Ceiling Execution 2",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-2.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p3',
-    title: 'Wood Slat Living Partition',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-concept-slats.jpg',
-    description:
-      'Open living composition with vertical timber slats, glass partitions, and a calm neutral palette for modern family living.',
-    specs: ['Vertical wood slats', 'Glass partition', 'Neutral palette'],
+    "id": "p202",
+    "title": "Living & Ceiling Execution 3",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-3.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p4',
-    title: 'Warm Ambient Living Concept',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-concept-luxury.jpg',
-    description:
-      'Editorial living render with layered lighting, a low-profile lounge, and architectural wall paneling.',
-    specs: ['Ambient LEDs', 'Panelled walls', 'Lounge layout'],
+    "id": "p203",
+    "title": "Living & Ceiling Execution 4",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-4.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p5',
-    title: 'Double-Height Living Render',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-living-1.jpg',
-    description:
-      'Luxury living interior with a deep teal wall, ring pendants, and a backlit TV niche — designed for G+ homes in Bengaluru.',
-    specs: ['Ring pendants', 'TV feature wall', 'Marble flooring'],
+    "id": "p204",
+    "title": "Living & Ceiling Execution 5",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-5.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p6',
-    title: 'Living Interior View',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-dining.jpg',
-    description:
-      'Second living composition exploring seating flow, ceiling coves, and a refined material mix for everyday luxury.',
-    specs: ['Space planning', 'Cove lighting', 'Custom millwork'],
+    "id": "p205",
+    "title": "Living & Ceiling Execution 6",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-6.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p7',
-    title: 'Dining Interior View',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-double-height.jpg',
-    description:
-      'Formal dining zone with statement lighting and coordinated wall finishes that connect kitchen, foyer, and living.',
-    specs: ['Dining layout', 'Statement lighting', 'Coordinated finishes'],
+    "id": "p206",
+    "title": "Living & Ceiling Execution 7",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-7.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p8',
-    title: 'Foyer Arrival Sequence',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-commercial.jpg',
-    description:
-      'Foyer and puja-adjacent arrival with layered niches, ambient lighting, and a first impression that feels ceremonial.',
-    specs: ['Foyer unit', 'Niche lighting', 'Puja adjacency'],
+    "id": "p207",
+    "title": "Living & Ceiling Execution 8",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-8.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p9',
-    title: 'Double Height Void',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-double-height.jpg',
-    description:
-      'Double-height interior capturing vertical drama, staircase presence, and ceiling layers that read from both floors.',
-    specs: ['Double height', 'Staircase view', 'Vertical lighting'],
+    "id": "p208",
+    "title": "Living & Ceiling Execution 9",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-9.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p10',
-    title: 'Double Height Gallery',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-commercial.jpg',
-    description:
-      'A second double-height study focusing on railing details, wall cladding, and the conversation between floors.',
-    specs: ['Gallery railing', 'Wall cladding', 'Volume study'],
+    "id": "p209",
+    "title": "Living & Ceiling Execution 10",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-10.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p11',
-    title: 'False Ceiling Hero Stair',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/ceiling-hero.jpg',
-    description:
-      'Executed multi-tier ceiling over a staircase hall with CNC lattice, spotlights, and timber-cream layering.',
-    specs: ['CNC jali', 'Multi-tier ceiling', 'Staircase hall'],
+    "id": "p210",
+    "title": "Living & Ceiling Execution 11",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-11.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p12',
-    title: 'Cove-Lit Bedroom Ceiling',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/Bedrooms-Closets/cove-lit-bedroom.jpg',
-    description:
-      'Bedroom ceiling with recessed tiers and warm perimeter lighting for a calm, hotel-like night-time mood.',
-    specs: ['Recessed tiers', 'Warm LEDs', 'Bedroom suite'],
+    "id": "p211",
+    "title": "Living & Ceiling Execution 12",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-12.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p13',
-    title: 'Kitchen Ceiling Integration',
-    type: 'Site Executed',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/living-foyer/ceiling-kitchen.jpg',
-    description:
-      'Kitchen ceiling that aligns task lighting with modular cabinetry — practical, bright, and visually quiet.',
-    specs: ['Task lighting', 'Wood recess', 'Workflow lighting'],
+    "id": "p212",
+    "title": "Living & Ceiling Execution 13",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-13.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p14',
-    title: 'Gold-Lined Ceiling Panels',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/ceiling-hero.jpg',
-    description:
-      'Wall-to-ceiling transition with vertical panels, gold inlay, and a crisp white drop ceiling.',
-    specs: ['Gold inlay', 'Vertical panels', 'Drop ceiling'],
+    "id": "p213",
+    "title": "Living & Ceiling Execution 14",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-14.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p15',
-    title: 'Modular Kitchen Concept',
-    type: '3D Design',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/kitchen/kitchen-concept.jpg',
-    description:
-      'Premium modular kitchen planning with acrylic-ready finishes, tall storage, and an ergonomic work triangle.',
-    specs: ['Ergonomic layout', 'Tall units', 'Acrylic-ready'],
+    "id": "p214",
+    "title": "Living & Ceiling Execution 15",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-15.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p16',
-    title: 'U-Shaped Modular Layout',
-    type: '3D Design',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/kitchen/kitchen-modular-2.jpg',
-    description:
-      'Space-efficient modular unit with maximised storage, clean appliance integration, and a calm material story.',
-    specs: ['Max storage', 'Appliance housing', 'Clean lines'],
+    "id": "p215",
+    "title": "Living & Ceiling Execution 16",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-16.jpg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p17',
-    title: 'Dual-Tone Kitchen Island',
-    type: '3D Design',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/kitchen/kitchen-modular-2.jpg',
-    description:
-      'Minimal modular composition pairing warm wood with white uppers — designed for daily cooking and display.',
-    specs: ['Dual tone', 'Under-cabinet glow', 'Quartz-ready'],
+    "id": "p216",
+    "title": "Living & Ceiling Execution 17",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-17.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p18',
-    title: 'Executed Modular Kitchen',
-    type: 'Site Executed',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/kitchen/kitchen-executed.jpg',
-    description:
-      'On-site modular kitchen with wood-grain tall units, white uppers, quartz counter, chimney, and under-cabinet LEDs.',
-    specs: ['Turnkey kitchen', '6+4 yr warranty', 'LED task lighting'],
+    "id": "p217",
+    "title": "Living & Ceiling Execution 18",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-18.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p19',
-    title: 'Kitchen Interior View',
-    type: '3D Design',
-    category: 'kitchen',
-    image: '/projects/portfolio-assets/kitchen/site-kitchen.jpg',
-    description:
-      'Photoreal kitchen render showing appliance walls, breakfast adjacency, and lighting that survives evening use.',
-    specs: ['Photoreal render', 'Appliance wall', 'Evening lighting'],
+    "id": "p218",
+    "title": "Living & Ceiling Execution 19",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-19.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p20',
-    title: 'Master Bedroom Sanctuary',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/Bedrooms-Closets/master-bedroom-sanctuary.jpg',
-    description:
-      'Master suite with ambient LED panelling, a low-profile bed wall, and a clutter-free circulation path.',
-    specs: ['LED panelling', 'Master suite', 'Calm palette'],
+    "id": "p219",
+    "title": "Living & Ceiling Execution 20",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-20.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p21',
-    title: 'Minimal Bedroom Retreat',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/Bedrooms-Closets/minimal-bedroom-retreat.jpg',
-    description:
-      'Quality-over-quantity bedroom with streamlined wardrobes, soft lighting, and a restful material palette.',
-    specs: ['Streamlined wardrobe', 'Soft lighting', 'Minimal furniture'],
+    "id": "p220",
+    "title": "Living & Ceiling Execution 21",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-21.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p22',
-    title: 'Bedroom Convenience Study',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/bedroom-concept-2.jpg',
-    description:
-      'Convenience-first bedroom: bedside amenities, well-placed lighting, and an efficient workspace edge.',
-    specs: ['Bedside lighting', 'Storage plan', 'Workspace edge'],
+    "id": "p221",
+    "title": "Living & Ceiling Execution 22",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-22.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p23',
-    title: 'Panelled Bedroom Concept',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/bedroom-concept-2.jpg',
-    description:
-      'Bedroom wall panelling and wardrobe alignment designed as one architectural plane.',
-    specs: ['Full-height panels', 'Wardrobe plane', 'Hidden storage'],
+    "id": "p222",
+    "title": "Living & Ceiling Execution 23",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-23.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p24',
-    title: 'Master Bedroom Interior',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/site-bedroom-1.jpg',
-    description:
-      'Master bedroom render with a feature headboard wall, layered ceiling, and ensuite adjacency.',
-    specs: ['Headboard wall', 'Ensuite access', 'Layered ceiling'],
+    "id": "p223",
+    "title": "Living & Ceiling Execution 24",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-24.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p25',
-    title: 'Master Bedroom Suite View',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/site-bedroom-2.jpg',
-    description:
-      'Second master view studying wardrobe sliding systems and ambient night lighting.',
-    specs: ['Sliding closets', 'Night lighting', 'Suite planning'],
+    "id": "p224",
+    "title": "Living & Ceiling Execution 25",
+    "type": "Site Executed",
+    "category": "living",
+    "image": "/projects/portfolio-new/living-25.jpeg",
+    "description": "Stunning living & ceiling interior design and execution by Aryan Architects.",
+    "specs": [
+      "Living & Ceiling",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p26',
-    title: 'Secondary Bedroom View',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/site-bedroom-1.jpg',
-    description:
-      'Guest or child bedroom with efficient storage, balanced lighting, and a quieter decorative language.',
-    specs: ['Compact storage', 'Soft finishes', 'Flexible use'],
+    "id": "p178",
+    "title": "Modular Kitchen Execution 1",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-1.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p27',
-    title: 'Bedroom Interior Alternate',
-    type: '3D Design',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/site-bedroom-2.jpg',
-    description:
-      'Alternate bedroom composition focusing on wardrobe doors, bedside symmetry, and ceiling coves.',
-    specs: ['Hinged closets', 'Symmetry', 'Cove lighting'],
+    "id": "p179",
+    "title": "Modular Kitchen Execution 2",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-2.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p28',
-    title: 'Walk-in Closet Composition',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/closet-1.jpg',
-    description:
-      'Elegant closet with a curated hang-and-fold mix, earth-tone neutrals, and hardware selected for a lifetime feel.',
-    specs: ['Lifetime hardware', 'Curated storage', 'Neutral palette'],
+    "id": "p180",
+    "title": "Modular Kitchen Execution 3",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-3.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p29',
-    title: 'Organised Wardrobe Wall',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/closet-2.jpg',
-    description:
-      'Smart wardrobe organisation that keeps every item visible without visual noise.',
-    specs: ['Smart storage', 'Open-close mix', 'Clutter-free'],
+    "id": "p181",
+    "title": "Modular Kitchen Execution 4",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-4.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p30',
-    title: 'Acrylic Closet Finish',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/closet-acrylic-1.jpg',
-    description:
-      'High-gloss acrylic wardrobe shutters — easy to clean, reflective, and tailored for compact Bengaluru bedrooms.',
-    specs: ['Acrylic shutters', 'High gloss', 'Compact footprint'],
+    "id": "p182",
+    "title": "Modular Kitchen Execution 5",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-5.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p31',
-    title: 'Subtle Acrylic Wardrobe',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/closet-acrylic-2.jpg',
-    description:
-      'Softer acrylic wardrobe language with handles and internal lighting that feel quiet rather than loud.',
-    specs: ['Subtle gloss', 'Internal lighting', 'Handle hardware'],
+    "id": "p183",
+    "title": "Modular Kitchen Execution 6",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-6.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p32',
-    title: 'LED Feature Wall',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/feature-wall-1.jpg',
-    description:
-      'Bedroom feature wall with ambient LEDs — a signature Aryan move for master suites.',
-    specs: ['Ambient LEDs', 'Texture panel', 'Master accent'],
+    "id": "p184",
+    "title": "Modular Kitchen Execution 7",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-7.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p33',
-    title: 'Textured Headboard Wall',
-    type: 'Site Executed',
-    category: 'bedroom',
-    image: '/projects/portfolio-assets/bedrooms-closets/feature-wall-2.jpg',
-    description:
-      'Tactile headboard wall that becomes the room’s only statement — everything else stays quiet.',
-    specs: ['Textured panel', 'Statement wall', 'Quiet furniture'],
+    "id": "p185",
+    "title": "Modular Kitchen Execution 8",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-8.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p34',
-    title: 'Luxury Bathroom Suite',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-executed-foyer.jpg',
-    description:
-      'Bathroom suite with large-format tiles, hidden storage, and lighting that flatters stone and metal equally.',
-    specs: ['Large-format tile', 'Vanity lighting', 'Wet-dry split'],
+    "id": "p186",
+    "title": "Modular Kitchen Execution 9",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-9.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p35',
-    title: 'Vanity Bathroom Detail',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-commercial.jpg',
-    description:
-      'Vanity-focused bathroom with mirror lighting and a materials palette that pairs with the master suite.',
-    specs: ['Mirror lighting', 'Stone vanity', 'Suite match'],
+    "id": "p187",
+    "title": "Modular Kitchen Execution 10",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-10.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p36',
-    title: 'Spa Bathroom Composition',
-    type: 'Site Executed',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-dining.jpg',
-    description:
-      'A more spa-like bath with layered niches, warm metal accents, and calm stone.',
-    specs: ['Niches', 'Warm metal', 'Spa mood'],
+    "id": "p188",
+    "title": "Modular Kitchen Execution 11",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-11.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p37',
-    title: 'Bathroom Interior View',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-living-1.jpg',
-    description:
-      'Bathroom render exploring fixture placement, shower screen, and ceiling-integrated ventilation lighting.',
-    specs: ['Fixture layout', 'Shower screen', 'Ceiling lights'],
+    "id": "p189",
+    "title": "Modular Kitchen Execution 12",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-12.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p38',
-    title: 'Bathroom Alternate View',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/site-double-height.jpg',
-    description:
-      'Second bathroom study for a compact ensuite with tall storage and a bright wet area.',
-    specs: ['Compact ensuite', 'Tall storage', 'Bright wet area'],
+    "id": "p190",
+    "title": "Modular Kitchen Execution 13",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-13.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p39',
-    title: 'G+3 Residential 2D Plan',
-    type: '3D Design',
-    category: 'design',
-    image: '/projects/portfolio-assets/design/elevation-g2.jpg',
-    description:
-      'Proposed G+3 residence in Bengaluru — ground parking with lift and stair core, first-floor living, pooja, and bedrooms.',
-    specs: ['G+3', 'Lift + stair', '35′ × 33′ footprint'],
+    "id": "p191",
+    "title": "Modular Kitchen Execution 14",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-14.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p40',
-    title: 'G+3 Upper Floor Plan',
-    type: '3D Design',
-    category: 'design',
-    image: '/projects/portfolio-assets/design/elevation-g2-alt.jpg',
-    description:
-      'Upper-level planning for the same residence, coordinating bedrooms, toilets, and balcony edges.',
-    specs: ['Upper floors', 'Room dimensions', 'Balcony edges'],
+    "id": "p192",
+    "title": "Modular Kitchen Execution 15",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-15.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p41',
-    title: 'Front Elevation G+2',
-    type: '3D Design',
-    category: 'elevation',
-    image: '/projects/portfolio-assets/design/elevation-g2.jpg',
-    description:
-      'Contemporary G+2 elevation with circular window, timber pergola, botanical screen, and an arched terrace frame.',
-    specs: ['G+2 specialist', 'Pergola terrace', 'Laser-cut screen'],
+    "id": "p193",
+    "title": "Modular Kitchen Execution 16",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-16.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p42',
-    title: 'Commercial Elevation G+3',
-    type: '3D Design',
-    category: 'elevation',
-    image: '/projects/portfolio-assets/design/elevation-g2.jpg',
-    description:
-      'Front elevation for a G+3 commercial volume — rhythm, signage zones, and a civic street presence.',
-    specs: ['G+3 commercial', 'Street presence', 'Material rhythm'],
+    "id": "p194",
+    "title": "Modular Kitchen Execution 17",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-17.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p43',
-    title: 'Residential Elevation G+2',
-    type: '3D Design',
-    category: 'elevation',
-    image: '/projects/portfolio-assets/design/elevation-g2-alt.jpg',
-    description:
-      'Alternate G+2 elevation exploring balcony depths, stone cladding, and a quieter roofline.',
-    specs: ['Balcony depth', 'Stone cladding', 'G+2'],
+    "id": "p195",
+    "title": "Modular Kitchen Execution 18",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-18.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p44',
-    title: 'Front Elevation G+1',
-    type: '3D Design',
-    category: 'elevation',
-    image: '/projects/portfolio-assets/design/elevation-g2-alt.jpg',
-    description:
-      'Compact G+1 elevation for a tighter plot — still layered, still iconic, still buildable.',
-    specs: ['G+1 specialist', 'Compact plot', 'Layered facade'],
+    "id": "p196",
+    "title": "Modular Kitchen Execution 19",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-19.jpg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p52',
-    title: 'Commercial Living Lounge',
-    type: '3D Design',
-    category: 'living',
-    image: '/projects/portfolio-assets/living-foyer/living-commercial.jpg',
-    description:
-      'Commercial-adjacent lounge language — hospitality seating, durable finishes, and a brand-ready first impression.',
-    specs: ['Commercial lounge', 'Durable finishes', 'Hospitality seating'],
+    "id": "p197",
+    "title": "Modular Kitchen Execution 20",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-20.jpeg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p53',
-    title: 'Wide Theatre Room',
-    type: '3D Design',
-    category: 'theatre',
-    image: '/projects/portfolio-assets/theatre-balcony/theatre-wide.jpg',
-    description:
-      'Wide-angle theatre concept showing projector throw, ceiling services, and a lounge-to-cinema transition.',
-    specs: ['Projector throw', 'Ceiling services', 'Lounge transition'],
+    "id": "p198",
+    "title": "Modular Kitchen Execution 21",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-21.jpeg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p54',
-    title: 'Japanese Zen Balcony',
-    type: '3D Design',
-    category: 'theatre',
-    image: '/projects/portfolio-assets/theatre-balcony/balcony-zen.jpg',
-    description:
-      'Balcony garden with a Japanese/Zen sensibility — timber, greenery, and a pause between the house and the city.',
-    specs: ['Zen garden', 'Timber decking', 'Planter composition'],
+    "id": "p199",
+    "title": "Modular Kitchen Execution 22",
+    "type": "Site Executed",
+    "category": "kitchen",
+    "image": "/projects/portfolio-new/kitchen-22.jpeg",
+    "description": "Stunning modular kitchen interior design and execution by Aryan Architects.",
+    "specs": [
+      "Modular Kitchen",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'p55',
-    title: 'Side View Balcony',
-    type: '3D Design',
-    category: 'theatre',
-    image: '/projects/portfolio-assets/theatre-balcony/site-balcony-2.jpg',
-    description:
-      'Side balcony view studying railing, overhang, and how the garden reads from the street elevation.',
-    specs: ['Railing detail', 'Overhang', 'Street read'],
-  },
-]
-
-export const comparisonSets = [
-  {
-    id: 'cmp-living',
-    title: 'Living lounge — concept to site',
-    beforeLabel: '3D Design',
-    afterLabel: 'Site Executed',
-    before: '/projects/portfolio-assets/living-foyer/living-3d-ceiling.jpg',
-    after: '/projects/portfolio-assets/living-foyer/living-executed-foyer.jpg',
+    "id": "p74",
+    "title": "Bedroom & Wardrobes Execution 1",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-1.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
   {
-    id: 'cmp-kitchen',
-    title: 'Modular kitchen — concept to site',
-    beforeLabel: '3D Design',
-    afterLabel: 'Site Executed',
-    before: '/projects/portfolio-assets/kitchen/kitchen-concept.jpg',
-    after: '/projects/portfolio-assets/kitchen/kitchen-executed.jpg',
+    "id": "p75",
+    "title": "Bedroom & Wardrobes Execution 2",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-2.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
   },
-]
+  {
+    "id": "p76",
+    "title": "Bedroom & Wardrobes Execution 3",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-3.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p77",
+    "title": "Bedroom & Wardrobes Execution 4",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-4.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p78",
+    "title": "Bedroom & Wardrobes Execution 5",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-5.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p79",
+    "title": "Bedroom & Wardrobes Execution 6",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-6.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p80",
+    "title": "Bedroom & Wardrobes Execution 7",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-7.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p81",
+    "title": "Bedroom & Wardrobes Execution 8",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-8.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p82",
+    "title": "Bedroom & Wardrobes Execution 9",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-9.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p83",
+    "title": "Bedroom & Wardrobes Execution 10",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-10.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p84",
+    "title": "Bedroom & Wardrobes Execution 11",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-11.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p85",
+    "title": "Bedroom & Wardrobes Execution 12",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-12.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p86",
+    "title": "Bedroom & Wardrobes Execution 13",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-13.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p87",
+    "title": "Bedroom & Wardrobes Execution 14",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-14.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p88",
+    "title": "Bedroom & Wardrobes Execution 15",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-15.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p89",
+    "title": "Bedroom & Wardrobes Execution 16",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-16.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p90",
+    "title": "Bedroom & Wardrobes Execution 17",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-17.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p91",
+    "title": "Bedroom & Wardrobes Execution 18",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-18.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p92",
+    "title": "Bedroom & Wardrobes Execution 19",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-19.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p93",
+    "title": "Bedroom & Wardrobes Execution 20",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-20.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p94",
+    "title": "Bedroom & Wardrobes Execution 21",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-21.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p95",
+    "title": "Bedroom & Wardrobes Execution 22",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-22.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p96",
+    "title": "Bedroom & Wardrobes Execution 23",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-23.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p97",
+    "title": "Bedroom & Wardrobes Execution 24",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-24.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p98",
+    "title": "Bedroom & Wardrobes Execution 25",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-25.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p99",
+    "title": "Bedroom & Wardrobes Execution 26",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-26.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p100",
+    "title": "Bedroom & Wardrobes Execution 27",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-27.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p101",
+    "title": "Bedroom & Wardrobes Execution 28",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-28.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p102",
+    "title": "Bedroom & Wardrobes Execution 29",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-29.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p103",
+    "title": "Bedroom & Wardrobes Execution 30",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-30.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p104",
+    "title": "Bedroom & Wardrobes Execution 31",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-31.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p105",
+    "title": "Bedroom & Wardrobes Execution 32",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-32.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p106",
+    "title": "Bedroom & Wardrobes Execution 33",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-33.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p107",
+    "title": "Bedroom & Wardrobes Execution 34",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-34.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p108",
+    "title": "Bedroom & Wardrobes Execution 35",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-35.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p109",
+    "title": "Bedroom & Wardrobes Execution 36",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-36.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p110",
+    "title": "Bedroom & Wardrobes Execution 37",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-37.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p111",
+    "title": "Bedroom & Wardrobes Execution 38",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-38.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p112",
+    "title": "Bedroom & Wardrobes Execution 39",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-39.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p113",
+    "title": "Bedroom & Wardrobes Execution 40",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-40.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p114",
+    "title": "Bedroom & Wardrobes Execution 41",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-41.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p115",
+    "title": "Bedroom & Wardrobes Execution 42",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-42.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p116",
+    "title": "Bedroom & Wardrobes Execution 43",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-43.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p117",
+    "title": "Bedroom & Wardrobes Execution 44",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-44.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p118",
+    "title": "Bedroom & Wardrobes Execution 45",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-45.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p119",
+    "title": "Bedroom & Wardrobes Execution 46",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-46.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p120",
+    "title": "Bedroom & Wardrobes Execution 47",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-47.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p121",
+    "title": "Bedroom & Wardrobes Execution 48",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-48.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p122",
+    "title": "Bedroom & Wardrobes Execution 49",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-49.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p123",
+    "title": "Bedroom & Wardrobes Execution 50",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-50.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p124",
+    "title": "Bedroom & Wardrobes Execution 51",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-51.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p125",
+    "title": "Bedroom & Wardrobes Execution 52",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-52.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p126",
+    "title": "Bedroom & Wardrobes Execution 53",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-53.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p127",
+    "title": "Bedroom & Wardrobes Execution 54",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-54.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p128",
+    "title": "Bedroom & Wardrobes Execution 55",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-55.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p129",
+    "title": "Bedroom & Wardrobes Execution 56",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-56.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p130",
+    "title": "Bedroom & Wardrobes Execution 57",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-57.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p131",
+    "title": "Bedroom & Wardrobes Execution 58",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-58.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p132",
+    "title": "Bedroom & Wardrobes Execution 59",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-59.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p133",
+    "title": "Bedroom & Wardrobes Execution 60",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-60.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p134",
+    "title": "Bedroom & Wardrobes Execution 61",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-61.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p135",
+    "title": "Bedroom & Wardrobes Execution 62",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-62.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p136",
+    "title": "Bedroom & Wardrobes Execution 63",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-63.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p137",
+    "title": "Bedroom & Wardrobes Execution 64",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-64.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p138",
+    "title": "Bedroom & Wardrobes Execution 65",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-65.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p139",
+    "title": "Bedroom & Wardrobes Execution 66",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-66.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p140",
+    "title": "Bedroom & Wardrobes Execution 67",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-67.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p141",
+    "title": "Bedroom & Wardrobes Execution 68",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-68.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p142",
+    "title": "Bedroom & Wardrobes Execution 69",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-69.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p143",
+    "title": "Bedroom & Wardrobes Execution 70",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-70.jpg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p144",
+    "title": "Bedroom & Wardrobes Execution 71",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-71.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p145",
+    "title": "Bedroom & Wardrobes Execution 72",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-72.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p146",
+    "title": "Bedroom & Wardrobes Execution 73",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-73.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p147",
+    "title": "Bedroom & Wardrobes Execution 74",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-74.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p148",
+    "title": "Bedroom & Wardrobes Execution 75",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-75.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p149",
+    "title": "Bedroom & Wardrobes Execution 76",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-76.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p150",
+    "title": "Bedroom & Wardrobes Execution 77",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-77.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p151",
+    "title": "Bedroom & Wardrobes Execution 78",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-78.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p152",
+    "title": "Bedroom & Wardrobes Execution 79",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-79.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p153",
+    "title": "Bedroom & Wardrobes Execution 80",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-80.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p154",
+    "title": "Bedroom & Wardrobes Execution 81",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-81.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p155",
+    "title": "Bedroom & Wardrobes Execution 82",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-82.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p156",
+    "title": "Bedroom & Wardrobes Execution 83",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-83.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p157",
+    "title": "Bedroom & Wardrobes Execution 84",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-84.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p158",
+    "title": "Bedroom & Wardrobes Execution 85",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-85.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p159",
+    "title": "Bedroom & Wardrobes Execution 86",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-86.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p160",
+    "title": "Bedroom & Wardrobes Execution 87",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-87.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p161",
+    "title": "Bedroom & Wardrobes Execution 88",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-88.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p162",
+    "title": "Bedroom & Wardrobes Execution 89",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-89.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p163",
+    "title": "Bedroom & Wardrobes Execution 90",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-90.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p164",
+    "title": "Bedroom & Wardrobes Execution 91",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-91.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p165",
+    "title": "Bedroom & Wardrobes Execution 92",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-92.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p166",
+    "title": "Bedroom & Wardrobes Execution 93",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-93.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p167",
+    "title": "Bedroom & Wardrobes Execution 94",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-94.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p168",
+    "title": "Bedroom & Wardrobes Execution 95",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-95.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p169",
+    "title": "Bedroom & Wardrobes Execution 96",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-96.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p170",
+    "title": "Bedroom & Wardrobes Execution 97",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-97.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p171",
+    "title": "Bedroom & Wardrobes Execution 98",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-98.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p172",
+    "title": "Bedroom & Wardrobes Execution 99",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-99.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p173",
+    "title": "Bedroom & Wardrobes Execution 100",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-100.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p174",
+    "title": "Bedroom & Wardrobes Execution 101",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-101.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p175",
+    "title": "Bedroom & Wardrobes Execution 102",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-102.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p176",
+    "title": "Bedroom & Wardrobes Execution 103",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-103.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p177",
+    "title": "Bedroom & Wardrobes Execution 104",
+    "type": "Site Executed",
+    "category": "bedroom",
+    "image": "/projects/portfolio-new/bedroom-104.jpeg",
+    "description": "Stunning bedroom & wardrobes interior design and execution by Aryan Architects.",
+    "specs": [
+      "Bedroom & Wardrobes",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p1",
+    "title": "3D Design Execution 1",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-1.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p2",
+    "title": "3D Design Execution 2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-2.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p3",
+    "title": "3D Design Execution 3",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-3.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p4",
+    "title": "3D Design Execution 4",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-4.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p5",
+    "title": "3D Design Execution 5",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-5.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p6",
+    "title": "3D Design Execution 6",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-6.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p7",
+    "title": "3D Design Execution 7",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-7.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p8",
+    "title": "3D Design Execution 8",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-8.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p9",
+    "title": "3D Design Execution 9",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-9.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p10",
+    "title": "3D Design Execution 10",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-10.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p11",
+    "title": "3D Design Execution 11",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-11.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p12",
+    "title": "3D Design Execution 12",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-12.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p13",
+    "title": "3D Design Execution 13",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-13.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p14",
+    "title": "3D Design Execution 14",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-14.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p15",
+    "title": "3D Design Execution 15",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-15.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p16",
+    "title": "3D Design Execution 16",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-16.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p17",
+    "title": "3D Design Execution 17",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-17.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p18",
+    "title": "3D Design Execution 18",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-18.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p19",
+    "title": "3D Design Execution 19",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-19.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p20",
+    "title": "3D Design Execution 20",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-20.jpeg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p21",
+    "title": "3D Design Execution 21",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-21.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p22",
+    "title": "3D Design Execution 22",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-22.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p23",
+    "title": "3D Design Execution 1",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-1.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p24",
+    "title": "3D Design Execution 2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-2.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p25",
+    "title": "3D Design Execution 3",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-3.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p26",
+    "title": "3D Design Execution 4",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-4.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p27",
+    "title": "3D Design Execution 5",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-5.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p28",
+    "title": "3D Design Execution 6",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-6.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p29",
+    "title": "3D Design Execution 7",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-7.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p30",
+    "title": "3D Design Execution 8",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-8.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p31",
+    "title": "3D Design Execution 9",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-9.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p32",
+    "title": "3D Design Execution 10",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-10.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p33",
+    "title": "3D Design Execution 1",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-1.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p34",
+    "title": "3D Design Execution 2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-2.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p35",
+    "title": "3D Design Execution 3",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-3.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p36",
+    "title": "3D Design Execution 4",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-4.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p37",
+    "title": "3D Design Execution 5",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-5.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p38",
+    "title": "3D Design Execution 6",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-6.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p39",
+    "title": "3D Design Execution 7",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-7.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p40",
+    "title": "3D Design Execution 8",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-8.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p41",
+    "title": "3D Design Execution 9",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-9.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p42",
+    "title": "3D Design Execution 10",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-10.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p43",
+    "title": "3D Design Execution 11",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-11.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p44",
+    "title": "3D Design Execution 12",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-12.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p45",
+    "title": "3D Design Execution 13",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-13.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p46",
+    "title": "3D Design Execution 14",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-14.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p47",
+    "title": "3D Design Execution 15",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-15.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p48",
+    "title": "3D Design Execution 16",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-16.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p49",
+    "title": "3D Design Execution 17",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-17.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p50",
+    "title": "3D Design Execution 1",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-1.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p51",
+    "title": "3D Design Execution 2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-2.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p52",
+    "title": "3D Design Execution 3",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-3.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p53",
+    "title": "3D Design Execution 4",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-4.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p54",
+    "title": "3D Design Execution 1",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-1.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p55",
+    "title": "3D Design Execution 2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-2.jpeg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p56",
+    "title": "3D Design Execution 3",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-3.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p57",
+    "title": "3D Design Execution 4",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-4.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p58",
+    "title": "3D Design Execution 5",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-5.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p59",
+    "title": "3D Design Execution 6",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-6.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p60",
+    "title": "3D Design Execution 7",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-7.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p61",
+    "title": "3D Design Execution 8",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-8.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p62",
+    "title": "3D Design Execution 9",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-9.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p63",
+    "title": "3D Design Execution 10",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-10.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p64",
+    "title": "3D Design Execution 11",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-11.png",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p65",
+    "title": "3D Design Execution 12",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-12.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p66",
+    "title": "3D Design Execution 13",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-13.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p67",
+    "title": "3D Design Execution 14",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-14.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p68",
+    "title": "3D Design Execution 15",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-15.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p69",
+    "title": "3D Design Execution 16",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-16.jpeg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p70",
+    "title": "3D Design Execution 17",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-17.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p71",
+    "title": "3D Design Execution 18",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-18.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p72",
+    "title": "3D Design Execution 19",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-19.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p73",
+    "title": "3D Design Execution 20",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/portfolio-new/design-20.jpg",
+    "description": "Stunning 3d design interior design and execution by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p427",
+    "title": "Elevation G2",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/3D Design/elevation-g2.jpg",
+    "description": "Stunning 3D elevation design by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Elevation",
+      "Modern"
+    ]
+  },
+  {
+    "id": "p428",
+    "title": "Elevation G2 Alternative",
+    "type": "3D Design",
+    "category": "design",
+    "image": "/projects/3D Design/elevation-g2-alt.jpg",
+    "description": "Stunning 3D elevation design alternative by Aryan Architects.",
+    "specs": [
+      "3D Design",
+      "Elevation",
+      "Modern"
+    ]
+  },
+  {
+    "id": "p324",
+    "title": "Balcony Zen",
+    "type": "Site Executed",
+    "category": "theatre",
+    "image": "/projects/Home Theatre & Balcony/balcony-zen.jpg",
+    "description": "Stunning home theatre and balcony interior design by Aryan Architects.",
+    "specs": [
+      "Home Theatre & Balcony",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p325",
+    "title": "Balcony View",
+    "type": "Site Executed",
+    "category": "theatre",
+    "image": "/projects/Home Theatre & Balcony/site-balcony-2.jpg",
+    "description": "Stunning home theatre and balcony interior design by Aryan Architects.",
+    "specs": [
+      "Home Theatre & Balcony",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  },
+  {
+    "id": "p326",
+    "title": "Home Theatre",
+    "type": "Site Executed",
+    "category": "theatre",
+    "image": "/projects/Home Theatre & Balcony/theatre-wide.jpg",
+    "description": "Stunning home theatre and balcony interior design by Aryan Architects.",
+    "specs": [
+      "Home Theatre & Balcony",
+      "Premium Finish",
+      "Modern Design"
+    ]
+  }
+];

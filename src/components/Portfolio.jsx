@@ -1,22 +1,67 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useMemo, useState } from 'react'
-import { categories, comparisonSets, projects } from '../data/projectsData'
+import Fuse from 'fuse.js'
+import { Search } from 'lucide-react'
+import { categories, projects } from '../data/projectsData'
 import ComparisonSlider from './ComparisonSlider'
 import Lightbox from './Lightbox'
+
+const shuffleArray = (array) => {
+  const newArr = [...array]
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[newArr[i], newArr[j]] = [newArr[j], newArr[i]]
+  }
+  return newArr
+}
+
+const categoryOrder = ['living', 'kitchen', 'bedroom', 'design', 'theatre']
 
 export default function Portfolio() {
   const [cat, setCat] = useState('living')
   const [active, setActive] = useState(null)
   const [cmp, setCmp] = useState(0)
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const shuffledProjects = useMemo(() => {
+    const groups = {}
+    projects.forEach((p) => {
+      if (!groups[p.category]) groups[p.category] = []
+      groups[p.category].push(p)
+    })
+    Object.keys(groups).forEach((c) => {
+      groups[c] = shuffleArray(groups[c])
+    })
+    const recombined = []
+    categoryOrder.forEach((c) => {
+      if (groups[c]) recombined.push(...groups[c])
+    })
+    Object.keys(groups).forEach((c) => {
+      if (!categoryOrder.includes(c)) recombined.push(...groups[c])
+    })
+    return recombined
+  }, [])
+
+  const fuse = useMemo(() => {
+    return new Fuse(shuffledProjects, {
+      keys: ['title', 'description', 'specs', 'category'],
+      threshold: 0.4,
+      ignoreLocation: true,
+    })
+  }, [shuffledProjects])
 
   const filtered = useMemo(() => {
-    return projects.filter((p) => {
+    let result = shuffledProjects
+    if (searchQuery.trim()) {
+      result = fuse.search(searchQuery).map((res) => res.item)
+    }
+    return result.filter((p) => {
       if (cat === 'all') return true
       if (cat === 'design') return p.category === 'design'
       if (cat === 'theatre') return p.category === 'theatre'
       return p.category === cat
     })
-  }, [cat])
+  }, [cat, searchQuery, shuffledProjects, fuse])
 
   return (
     <section id="portfolio" className="bg-mist py-24 texture-grid">
@@ -31,6 +76,16 @@ export default function Portfolio() {
               Switch between photoreal design studies and built interiors. Filter by room, then open
               any plate in a full lightbox.
             </p>
+          </div>
+          <div className="relative w-full shrink-0 md:w-80">
+            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-teal/40" />
+            <input
+              type="text"
+              placeholder="Search 'kitchen', 'green', 'marble'..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full rounded-full border border-teal/15 bg-white py-3 pl-11 pr-4 text-sm text-teal shadow-sm outline-none transition-colors placeholder:text-teal/40 focus:border-gold"
+            />
           </div>
         </div>
 
@@ -58,9 +113,11 @@ export default function Portfolio() {
                 layout
                 key={p.id}
                 type="button"
-                initial={{ opacity: 0, scale: 0.96 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.96 }}
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.2 } }}
                 onClick={() => setActive(p)}
                 className="text-left"
               >
@@ -73,11 +130,7 @@ export default function Portfolio() {
                     />
                   </div>
                   <div className="p-4">
-                    <p className="text-[10px] uppercase tracking-[0.22em] text-gold-deep">
-                      {p.type}
-                    </p>
-                    <h3 className="mt-1 font-serif text-xl text-teal">{p.title}</h3>
-                    <p className="mt-1 line-clamp-2 text-xs text-slate">{p.description}</p>
+                    <h3 className="font-serif text-xl text-teal">{p.title}</h3>
                   </div>
                 </article>
               </motion.button>

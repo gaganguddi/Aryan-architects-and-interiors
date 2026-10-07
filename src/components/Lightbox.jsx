@@ -44,11 +44,11 @@ export default function Lightbox({ project, onClose }) {
             onClick={(e) => e.stopPropagation()}
             className="relative grid max-h-[92vh] w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl md:grid-cols-[1.4fr_1fr]"
           >
-            <div className="relative max-h-[46vh] overflow-auto bg-teal-deep md:max-h-[92vh]">
+            <div className="relative flex max-h-[46vh] w-full items-center justify-center overflow-auto bg-teal-deep md:max-h-[92vh]">
               <img
                 src={project.image}
                 alt={project.title}
-                className="mx-auto origin-center transition-transform duration-200"
+                className="max-h-full max-w-full object-contain origin-center transition-transform duration-200"
                 style={{ transform: `scale(${zoom})` }}
               />
             </div>

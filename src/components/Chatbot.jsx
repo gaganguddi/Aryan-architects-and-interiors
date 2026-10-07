@@ -64,12 +64,16 @@ export default function Chatbot() {
         ]
       };
 
-      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      // Smart routing: Local development vs Vercel Secure Production
+      const endpoint = API_KEY ? 'https://api.groq.com/openai/v1/chat/completions' : '/api/chat';
+      const headers = { 'Content-Type': 'application/json' };
+      if (API_KEY) {
+        headers['Authorization'] = `Bearer ${API_KEY}`;
+      }
+
+      const response = await fetch(endpoint, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${API_KEY}`
-        },
+        headers,
         body: JSON.stringify(payload)
       });
       
